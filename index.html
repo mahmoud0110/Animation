@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Gallary</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/hint.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top rounded-pill container mt-4 mb-5 ">
+    <div class="container-fluid">
+      <a class="navbar-brand  logo" data-aos="fade-right" href="#">
+        <img src="uploads/1.png" alt="">
+        <span>your gallary</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">cats</a>
+            <ul class="dropdown-menu round ">
+              <li><a class="dropdown-item rounded-pill p-2  " style="color: rgb(44, 43, 44);" href="#cats">natural</a></li>
+              <li><a class="dropdown-item rounded-pill p-2" style="color: rgb(44, 43, 44);" href="#cats">desktop</a></li>
+              <li><a class="dropdown-item rounded-pill p-2" style="color: rgb(44, 43, 44);" href="#cats">headers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#soc">Contacts</a>
+          </li>
+        </ul>
+        <form class="d-flex ">
+          <input class="form-control me-2 rounded-pill " data-aos="fade-in" type="text" placeholder="Search "
+            id="search">
+          <a href="#search"><img class="img" src="uploads/s.svg" alt="" data-aos="fade-left"></a>
+        </form>
+      </div>
+    </div>
+  </nav> <br><br>
+
+  <div class="sl">
+    <div class="myslide mymove">
+      <div class="number">1 / 5</div>
+      <img src="uploads/1.jpg" alt="">
+      <div class="caption">One</div>
+    </div>
+    <div class="myslide mymove">
+      <div class="number">2 / 5</div>
+      <img src="uploads/2.jpg" alt="">
+      <div class="caption">Two</div>
+    </div>
+    <div class="myslide mymove">
+      <div class="number">3 / 5</div>
+      <img src="uploads/3.jpg" alt="">
+      <div class="caption">Three</div>
+    </div>
+    <div class="myslide mymove">
+      <div class="number">4 / 5</div>
+      <img src="uploads/4.jpg" alt="">
+      <div class="caption">Four</div>
+    </div>
+    <div class="myslide mymove">
+      <div class="number">5 / 5</div>
+      <img src="uploads/5.jpg" alt="">
+      <div class="caption">Five</div>
+    </div>
+    <a class="prev" onclick="next(-1)">&#10094;</a>
+    <a class="next" onclick="next(1)">&#10095;</a>
+  </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="slide(1)"></span>
+    <span class="dot" onclick="slide(2)"></span>
+    <span class="dot" onclick="slide(3)"></span>
+    <span class="dot" onclick="slide(4)"></span>
+    <span class="dot" onclick="slide(5)"></span>
+  </div>
+
+  <div class="about row container m-5  ">
+    <div id="about" style="display: block;"></div>
+    <div class="text col-8 " data-aos="fade-right" data-aos-duration="1000">
+      <span>About</span>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus impedit vel saepe. Facilis ea ipsam
+        dolor in fugit debitis fugiat architecto perferendis doloribus pariatur. Similique esse veniam incidunt nam
+        magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta, laborum aliquid omnis ducimus
+        vitae alias animi dignissimos blanditiis distinctio minima iusto laboriosam, deserunt reiciendis nemo illum
+        rerum iste corporis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet mollitia voluptatum animi
+        nisi aperiam dolores dicta voluptas reprehenderit earum tempora consectetur atque, corporis reiciendis
+        voluptatibus odit id nam nostrum doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+        nobis excepturi nihil odit eveniet exercitationem placeat culpa, iusto cumque nesciunt fugit id ullam ad
+        sapiente impedit facere inventore molestiae? Ratione!</p>
+    </div>
+    <div class="pic col-3 ms-5 " data-aos="fade-left" data-aos-duration="1000">
+      <a href="#"><span class="ms-3">Your Gallary</span></a>
+      <a href="#"> <img src="uploads/2.png" class="rounded-circle" width="70%" alt=""></a>
+
+    </div>
+  </div>
+
+  <div class="pics row container m-5 ">
+    <div id="cats"></div>
+    <span class="cats mb-5" data-aos="fade-in">categories :</span>
+    <div class="wid ms-3 mb-5"><a
+        href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=natural%20photos&eq=natural%20ph&etslf=21067&term_meta[]=natural%7Cautocomplete%7C2&term_meta[]=photos%7Cautocomplete%7C2" target="_blank"><img
+          src="uploads/6.jpg" width="100%" alt="" data-aos="fade-right" data-aos-duration="1000"></a></div>
+    <div class="wid ms-3 mb-5"><a
+        href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=desktop%20wallpaper&eq=des&etslf=4132&term_meta[]=desktop%7Cautocomplete%7C1&term_meta[]=wallpaper%7Cautocomplete%7C1" target="_blank"><img
+          src="uploads/7.jpg" width="100%" alt="" data-aos="fade-down" data-aos-duration="1000"></a></div>
+    <div class="wid ms-3 mb-5"><a
+        href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=twitter%20header&eq=twi&etslf=10662&term_meta[]=twitter%7Cautocomplete%7C1&term_meta[]=header%7Cautocomplete%7C1" target="_blank"><img
+          src="uploads/8.jpg" width="100%" alt="" data-aos="fade-left" data-aos-duration="1000"></a></div>
+  </div>
+  <div class="form row" data-aos="fade-down" data-aos-duration="1700">
+    <form action="#cats">
+      <label for="TE"> Your opinion</label>
+      <div class="area container"><textarea name="" id="TE" placeholder=" Enter Your Opinion..."></textarea></div>
+      <button type="button" onclick="enter()">Confirm</button>
+    </form>
+  </div>
+
+  <div class="foot  bg-dark rounded-pill container  " id="soc">
+    <a href="https://www.instagram.com/muhmd_amen/" class="link" target="_blank">
+      <i class="fab fa-instagram instagram"></i>
+    </a>
+    <a href="https://twitter.com/muhmd_amin" class="link" target="_blank">
+      <i class="fab fa-twitter twitter"></i>
+    </a>
+    <a href="#" class="link" target="_blank">
+      <i class="fab fa-whatsapp whatsapp"></i>
+    </a>
+    <a href="#" class="link" target="_blank">
+      <i class="fab fa-facebook linkedin"></i>
+    </a>
+    <a href="#" class="link" target="_blank">
+      <i class="fab fa-linkedin linkedin"></i>
+    </a>
+  </div>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  <script src="js/wow.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
